@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Online Bakery Shop of The Stone Bakers selling bakery guides, equipments, ingredients, masterclasses, and bakery products such as bread, muffins, pie, and pastries."
+    />
+    <meta
+      name="keywords"
+      content="Bakery Shop, Buy Home Baking Equipment, Buy Home Baking Ingredients, Buy Home Baking Guides, Buy Baking Products"
+    />
+    <meta name="author" content="The Stone Bakers" />
+
+    <title>Bakery Shop: The Stone Bakery</title>
+
+    <!-- favicon link-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/TheStoneBakery_Favicon.png"
+    />
+
+    <!-- css stylesheet link -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- swiper slider CDN -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  </head>
+  <body>
+    <!-- header sections starts -->
+    <header class="header">
+      <!-- brand logo -->
+      <a href="index.html" class="logo">
+        <img src="img/StoneBakeryLogo-01.png" alt="the stone bakery logo" />
+        The Stone Bakery</a
+      >
+
+      <!-- navigation menu starts -->
+      <nav class="navbar">
+        <i class="fas fa-times" id="head-nav-close"></i>
+        <a href="index.html" title="home">
+          <i class="fas fa-home-lg"></i> Home</a
+        >
+        <a href="about.html" title="about us">
+          <i class="fas fa-users"></i> About</a
+        >
+        <a href="shop.html" title="bakery shop">
+          <i class="fas fa-shop"></i> Shop</a
+        >
+        <a href="cart.html" title="shopping cart">
+          <i class="fas fa-cart-shopping"></i> Cart</a
+        >
+        <button type="button" id="unitBtn" title="unit convertor">
+          <i class="fas fa-weight"></i> unit convertor
+        </button>
+        <button type="button" id="groceryBtn" title="my grocery list">
+          <i class="fas fa-list-check"></i> shopping list
+        </button>
+      </nav>
+      <!-- navigation menu ends -->
+
+      <!-- nav menu icons start -->
+      <section class="icons">
+        <button
+          class="fas fa-user"
+          id="login-btn"
+          title="user login"
+          type="button"
+        ></button>
+        <button
+          class="fas fa-search"
+          id="search-btn"
+          title="search"
+          type="button"
+        ></button>
+        <button
+          class="fas fa-shopping-cart"
+          id="cart-btn"
+          title="shopping cart"
+          type="button"
+        >
+          <div class="itemNumIndicator"><p id="headerItemCount">00</p></div>
+        </button>
+        <button
+          class="fas fa-bars"
+          id="menu-btn"
+          title="menu"
+          type="button"
+        ></button>
+      </section>
+      <!-- nav menu icons ends -->
+
+      <!-- search input box starts -->
+      <form action="" class="search-form">
+        <div class="fas fa-times" id="search-close"></div>
+        <input
+          type="search"
+          name="search"
+          id="filterInput"
+          placeholder="search from menu..."
+        />
+
+        <ul id="names" class="collection with-header">
+          <li class="collection-item">
+            <a href="">flat bread</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">brown bread</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">multigrain</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">soda bread</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">sourdough</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">whole wheat</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">yeast</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">eggs</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">flour</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">sugar</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">bread pan</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">apple pie</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">walnut pie</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">date pie</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">bear claw</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">cheese cake</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">rolling pin</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">banana bread</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">fig cake</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">apple cake</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">swiss roll</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">carrot cake</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">pineapple pastry</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">butterscotch pastry</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">cream</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">butter</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">baking soda</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">raisins</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">mixing bowls</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">whipper</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">baking paper</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">berries</a>
+          </li>
+        </ul>
+      </form>
+      <!-- search input box ends -->
+
+      <!-- shopping cart box starts  -->
+      <section class="shopping-cart">
+        <i class="fas fa-times" id="head-cart-close"></i>
+        <h3>Total Items in Your Cart:</h3>
+        <h2 id="headerCartQuantity">00</h2>
+        <h3>Your Total Bill:</h3>
+        <h2 id="headerCartPrice">00</h2>
+        <a href="cart.html"
+          ><button type="button" class="tertiaryBtn">
+            View Your Cart <i class="fas fa-cart-shopping"></i></button
+        ></a>
+      </section>
+
+      <!-- shopping cart box ends  -->
+
+      <!-- user login form box starts -->
+
+      <form action="" class="login-form">
+        <h3>
+          <i class="fas fa-user-circle"></i> login
+          <i class="fas fa-times" id="head-login-close"></i>
+        </h3>
+        <p>
+          Email Address:
+          <input
+            type="email"
+            class="box"
+            title="email address"
+            placeholder="yourName@example.com"
+            id="header-login-email"
+            oninput="emailValidityCheck(headerInputEmail, headerOutputEmail)"
+          />
+        </p>
+        <div id="email-output">required</div>
+
+        <p>
+          Password:
+          <input
+            type="password"
+            class="box"
+            placeholder="your password"
+            title="password"
+            id="header-login-psw"
+            oninput="passwordValidityCheck(headerInputPsw, headerOutputPsw)"
+          />
+        </p>
+        <div id="header-psw-output">required</div>
+
+        <p>forgot your password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create now</a></p>
+        <input
+          type="submit"
+          class="primaryBtn"
+          id="loginBtn"
+          value="login now"
+        />
+      </form>
+      <!-- user login form box ends -->
+      <!-- weight convertor modal box starts -->
+      <form action="" class="convertor-form">
+        <h3>
+          <i class="fas fa-spoon"></i> Unit Convertor
+          <i class="fas fa-times" id="close-convertor"></i>
+        </h3>
+        <p>Quantity:</p>
+        <article class="input-wrapper">
+          <label for="cups">cups: </label>
+          <input type="number" id="cups" value="1" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="tbsp">tablespoon (tbsp): </label>
+          <input type="number" id="tbsp" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="tsp">teaspoon (tsp): </label>
+          <input type="number" id="tsp" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="oz">ounces (oz): </label>
+          <input type="number" id="oz" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="gms">grams (gms): </label>
+          <input type="number" id="gms" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="ml">milliliters (ml): </label>
+          <input type="number" id="ml" />
+        </article>
+
+        <p>Temperature:</p>
+        <article class="input-wrapper">
+          <label for="degC">deg celsius (deg C): </label>
+          <input type="number" id="degC" value="1" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="degF">deg fahrenheit (deg F):</label>
+          <input type="number" id="degF" />
+        </article>
+      </form>
+      <!-- weight convertor modal box ends -->
+
+      <!-- my grocery list modal box starts -->
+      <section class="groceryList">
+        <h2>shopping list <i class="fas fa-times" id="close-grocery"></i></h2>
+        <article id="newTask">
+          <input type="text" placeholder="add item here..." />
+          <button type="button" class="secondaryBtn" id="push">Add</button>
+        </article>
+
+        <div id="tasks"></div>
+      </section>
+      <!-- my grocery list modal box ends -->
+    </header>
+    <!-- header sections ends -->
+
+    <!-- home section starts -->
+    <main class="shop">
+      <!-- hero section starts -->
+
+      <section class="hero" id="hero">
+        <article class="heroText">
+          <h4>welcome to</h4>
+          <h1>bakery shop</h1>
+          <p>
+            buy home baking items, masterclasses and our bakery products right
+            from your home!
+          </p>
+        </article>
+        <article class="heroBtns">
+          <a href="#shop-banner1" class="secondaryBtn">
+            Shop Now <i class="fas fa-arrow-alt-circle-down"></i>
+          </a>
+
+          <a href="#custom-order-form" class="tertiaryBtn">
+            Place Custom Order <i class="fas fa-list-alt"></i>
+          </a>
+        </article>
+      </section>
+
+      <!-- hero section ends -->
+
+      <!-- banner1 starts -->
+      <section class="banner1" id="shop-banner1">
+        <h2>home-baking products</h2>
+      </section>
+      <!-- banner1 ends -->
+
+      <!-- banner2 starts -->
+      <section class="banner2">
+        <h2>baking ingredients</h2>
+        <section class="card-wrapper ingredients"></section>
+      </section>
+      <!-- banner2 ends -->
+
+      <!-- banner3 starts -->
+      <section class="banner3">
+        <h2>baking utensils</h2>
+        <section class="card-wrapper utensils"></section>
+      </section>
+      <!-- banner3 ends -->
+      <!-- banner4 starts -->
+      <section class="banner4">
+        <h2>baking guidebooks</h2>
+        <section class="card-wrapper guidebooks"></section>
+      </section>
+      <!-- banner4 ends -->
+
+      <!-- banner5 starts -->
+      <section class="banner5">
+        <a href="cart.html" class="tertiaryBtn">
+          Go to shopping cart <i class="fas fa-shopping-bag"></i>
+        </a>
+      </section>
+      <!-- banner5 ends -->
+
+      <!-- banner6 starts -->
+      <section class="banner6">
+        <h2>Authentic Bakery Products</h2>
+      </section>
+      <!-- banner6 ends -->
+
+      <!-- banner7 starts -->
+      <section class="banner7">
+        <!-- title -->
+        <article class="title">
+          <h2>Filter:</h2>
+        </article>
+        <!-- filter buttons -->
+        <article class="btn-container">
+          <button type="button" class="filter-btn" data-id="all">all</button>
+        </article>
+        <!-- menu items -->
+        <article class="card-wrapper bakeryProducts">
+          <!-- single item -->
+        </article>
+      </section>
+      <!-- banner7 ends -->
+
+      <!-- banner8 starts -->
+      <section class="banner8">
+        <a href="cart.html" class="tertiaryBtn">
+          Go to shopping cart <i class="fas fa-shopping-bag"></i>
+        </a>
+      </section>
+      <!-- banner8 ends -->
+
+      <!-- banner9 starts -->
+      <section class="banner9" id="custom-order-form">
+        <h2>
+          place custom order
+          <f class="fas fa-list-alt"></f>
+        </h2>
+      </section>
+      <!-- banner9 ends -->
+
+      <!-- banner 10 custom order form starts -->
+      <section class="banner10">
+        <form onsubmit="alertOnSubmit()" class="customForm" id="customForm">
+          <label for="fullName">Full Name*: </label>
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Emma Watson"
+            title="enter your full name"
+            required
+          />
+
+          <label for="userEmail">email ID*: </label>
+          <input
+            type="email"
+            name="userEmail"
+            id="order-email-input"
+            placeholder="emma@gmail.com"
+            title="enter your email address"
+            required
+            oninput="emailValidityCheck(orderEmailInput,orderEmailMsg)"
+          />
+          <div id="order-email-msg"></div>
+          <br />
+
+          <label for="contactNumber">contact number*: </label>
+          <input
+            type="tel"
+            name="contactNumber"
+            id="order-phone-input"
+            placeholder="+353-777888999"
+            title="enter your email address"
+            required
+            oninput="phoneNumValidityCheck(orderPhoneInput, orderPhoneMsg)"
+          />
+          <div id="order-phone-msg"></div>
+          <br />
+          <label for="userMessage">message*: </label>
+          <textarea rows="10" title="message" required>
+ I want...
+          </textarea>
+
+          <label for="deliveryDate">delivery date: </label>
+          <input
+            type="date"
+            name="deliveryDate"
+            id="deliveryDate"
+            title="select a delivery date"
+          />
+
+          <label for="deliveryTime">delivery time: </label>
+          <input
+            type="time"
+            name="deliveryTime"
+            id="deliveryTime"
+            title="select a delivery time"
+          />
+
+          <label for="selectCategory"> category: </label>
+          <select name="selectCategory" id="selectCategory">
+            <optgroup label="home baking">
+              <option value="utensils">baking utensils</option>
+              <option value="ingredients" selected>baking ingredients</option>
+              <option value="guidebooks">baking guidebooks</option>
+              <option value="masterclass">baking masterclass</option>
+              <option value="other">other</option>
+            </optgroup>
+
+            <optgroup label="bakery products">
+              <option value="breads">breads</option>
+              <option value="pies">pies</option>
+              <option value="muffins">muffins</option>
+              <option value="pastries">pastries</option>
+              <option value="cookies">cookies</option>
+              <option value="biscuits">biscuits</option>
+              <option value="desserts">desserts</option>
+              <option value="rolls">rolls</option>
+              <option value="other">other</option>
+            </optgroup>
+            <option value="miscellaneous">miscellaneous</option>
+          </select>
+
+          <label for="quantity">Quantity (1 - 20): </label>
+          <input
+            type="number"
+            id="quantity"
+            placeholder="12"
+            name="quantity"
+            min="1"
+            max="20"
+          />
+
+          <article>
+            <label for="">Baking preference: </label> <br />
+
+            <input
+              type="radio"
+              name="diet"
+              class="bakingPref"
+              id="vegan"
+              value="vegan"
+            />
+            <label for="vegan"> vegan </label>
+            <br />
+            <input
+              type="radio"
+              name="diet"
+              class="bakingPref"
+              id="vegetarian"
+              value="vegetarian"
+            />
+            <label for="vegetarian"> vegetarian </label>
+            <br />
+            <input
+              type="radio"
+              name="diet"
+              class="bakingPref"
+              id="kosher"
+              value="kosher"
+            />
+            <label for="kosher"> kosher </label>
+            <br />
+            <input
+              type="radio"
+              name="diet"
+              class="bakingPref"
+              id="gluten-free"
+              value="gluten-free"
+            />
+            <label for="gluten-free"> gluten-free </label>
+            <br />
+
+            <input
+              type="radio"
+              name="diet"
+              class="bakingPref"
+              id="none"
+              value="none"
+              checked
+            />
+            <label for="none"> none </label>
+          </article>
+          <input
+            type="submit"
+            value="submit"
+            id="customOrderSubmit"
+            class="secondaryBtn"
+          />
+          <input type="reset" value="reset form" class="tertiaryBtn" />
+        </form>
+      </section>
+      <!-- banner 10 custom order form ends -->
+    </main>
+    <!-- home section ends -->
+    <!-- footer section starts -->
+
+    <footer class="footer" id="footer">
+      <section class="box-container">
+        <article class="box">
+          <img
+            src="img/TheStoneBakery_Favicon.png"
+            alt="The stone bakery logo"
+            width="64px"
+          />
+          <h3>The Stone bakery</h3>
+          <p>
+            Established In 1869, <br />
+            We Will Now Help You Bake-From-Home
+          </p>
+          <article class="share">
+            <a
+              href="https://www.facebook.com/"
+              class="fab fa-facebook"
+              title="facebook"
+            ></a>
+            <a
+              href="https://www.twitter.com/"
+              class="fab fa-twitter"
+              title="twitter"
+            ></a>
+            <a
+              href="https://www.instagram.com/"
+              class="fab fa-instagram"
+              title="instagram"
+            ></a>
+            <a
+              href="https://www.linkedin.com/"
+              class="fab fa-linkedin"
+              title="linkedin"
+            ></a>
+          </article>
+        </article>
+        <article class="box">
+          <h3>contact info</h3>
+          <a href="" class="links" title="links">
+            <i class="fas fa-phone"></i> +123-456-7890
+          </a>
+          <a href="" class="links" title="links">
+            <i class="fas fa-envelope"></i> contact@email.com
+          </a>
+          <a href="" class="links" title="links">
+            <i class="fas fa-map-marker-alt"></i> dublin 7, ireland
+          </a>
+        </article>
+        <article class="box">
+          <h3>quick links</h3>
+          <a href="index.html" class="links" title="links">
+            <i class="fas fa-home"></i> home
+          </a>
+          <a href="shop.html" class="links" title="links">
+            <i class="fas fa-shop"></i> shop
+          </a>
+          <a href="about.html" class="links" title="links">
+            <i class="fas fa-users"></i> about
+          </a>
+          <a href="cart.html" class="links" title="links">
+            <i class="fas fa-cart-shopping"></i> cart
+          </a>
+        </article>
+      </section>
+      <article class="credit">
+        design & dev by <span>karan gupta | D22124440 | TU Dublin</span> | all
+        rights reserved
+      </article>
+    </footer>
+
+    <!-- footer section ends -->
+
+    <!-- javascript link to external cdn for swiping images action -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript file attached at the end to load content first and then the script -->
+
+    <script src="javascript/products.js"></script>
+    <script src="javascript/header.js"></script>
+    <script src="javascript/shop.js"></script>
+  </body>
+</html>

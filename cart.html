@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shopping Cart of the Stone Bakery where you checkout items after putting them in the cart"
+    />
+    <meta
+      name="keywords"
+      content="Bakery Shop, Buy Home Baking Equipment, Buy Home Baking Ingredients, Buy Home Baking Guides, Buy Baking Products"
+    />
+    <meta name="author" content="The Stone Bakers" />
+
+    <title>Shopping Cart: The Stone Bakery</title>
+
+    <!-- favicon link-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/TheStoneBakery_Favicon.png"
+    />
+
+    <!-- css stylesheet link -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- swiper slider CDN -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  </head>
+  <body>
+    <!-- header sections starts -->
+    <header class="header">
+      <!-- brand logo -->
+      <a href="index.html" class="logo">
+        <img
+          src="img/StoneBakeryLogo-01.png"
+          alt="the stone bakery logo"
+          title="the stone bakery logo"
+        />
+        The Stone Bakery</a
+      >
+
+      <!-- navigation menu starts -->
+      <nav class="navbar">
+        <i class="fas fa-times" id="head-nav-close"></i>
+        <a href="index.html" title="home">
+          <i class="fas fa-home-lg"></i> Home</a
+        >
+        <a href="about.html" title="about us">
+          <i class="fas fa-users"></i> About</a
+        >
+        <a href="shop.html" title="bakery shop">
+          <i class="fas fa-shop"></i> Shop</a
+        >
+        <a href="cart.html" title="shopping cart">
+          <i class="fas fa-cart-shopping"></i> Cart</a
+        >
+        <button type="button" id="unitBtn" title="unit convertor">
+          <i class="fas fa-weight"></i> unit convertor
+        </button>
+        <button type="button" id="groceryBtn" title="my grocery list">
+          <i class="fas fa-list-check"></i> shopping list
+        </button>
+      </nav>
+      <!-- navigation menu ends -->
+
+      <!-- nav menu icons start -->
+      <section class="icons">
+        <button
+          class="fas fa-user"
+          id="login-btn"
+          title="user login"
+          type="button"
+        ></button>
+        <button
+          class="fas fa-search"
+          id="search-btn"
+          title="search"
+          type="button"
+        ></button>
+        <button
+          class="fas fa-shopping-cart"
+          id="cart-btn"
+          title="shopping cart"
+          type="button"
+        >
+          <div class="itemNumIndicator"><p id="headerItemCount">00</p></div>
+        </button>
+        <button
+          class="fas fa-bars"
+          id="menu-btn"
+          title="menu"
+          type="button"
+        ></button>
+      </section>
+      <!-- nav menu icons ends -->
+
+      <!-- search input box starts -->
+      <form action="" class="search-form">
+        <div class="fas fa-times" id="search-close"></div>
+        <input
+          type="search"
+          name="search"
+          id="filterInput"
+          placeholder="search from menu..."
+        />
+
+        <ul id="names" class="collection with-header">
+          <li class="collection-item">
+            <a href="">flat bread</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">brown bread</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">multigrain</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">soda bread</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">sourdough</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">whole wheat</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">yeast</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">eggs</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">flour</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">sugar</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">bread pan</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">apple pie</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">walnut pie</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">date pie</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">bear claw</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">cheese cake</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">rolling pin</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">banana bread</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">fig cake</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">apple cake</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">swiss roll</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">carrot cake</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">pineapple pastry</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">butterscotch pastry</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">cream</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">butter</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">baking soda</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">raisins</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">mixing bowls</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">whipper</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">baking paper</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">berries</a>
+          </li>
+        </ul>
+      </form>
+      <!-- search input box ends -->
+
+      <!-- shopping cart box starts  -->
+      <section class="shopping-cart">
+        <i class="fas fa-times" id="head-cart-close"></i>
+        <h3>Total Items in Your Cart:</h3>
+        <h2 id="headerCartQuantity">00</h2>
+        <h3>Your Total Bill:</h3>
+        <h2 id="headerCartPrice">00</h2>
+        <a href="cart.html"
+          ><button type="button" class="tertiaryBtn">
+            View Your Cart <i class="fas fa-cart-shopping"></i></button
+        ></a>
+      </section>
+
+      <!-- shopping cart box ends  -->
+
+      <!-- user login form box starts -->
+
+      <form action="" class="login-form">
+        <h3>
+          <i class="fas fa-user-circle"></i> login
+          <i class="fas fa-times" id="head-login-close"></i>
+        </h3>
+        <p>
+          Email Address:
+          <input
+            type="email"
+            class="box"
+            title="email address"
+            placeholder="yourName@example.com"
+            id="header-login-email"
+            oninput="emailValidityCheck(headerInputEmail, headerOutputEmail)"
+          />
+        </p>
+        <div id="email-output">required</div>
+
+        <p>
+          Password:
+          <input
+            type="password"
+            class="box"
+            placeholder="your password"
+            title="password"
+            id="header-login-psw"
+            oninput="passwordValidityCheck(headerInputPsw, headerOutputPsw)"
+          />
+        </p>
+        <div id="header-psw-output">required</div>
+
+        <p>forgot your password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create now</a></p>
+        <input
+          type="submit"
+          class="primaryBtn"
+          id="loginBtn"
+          value="login now"
+        />
+      </form>
+      <!-- user login form box ends -->
+      <!-- weight convertor modal box starts -->
+      <form action="" class="convertor-form">
+        <h3>
+          <i class="fas fa-spoon"></i> Unit Convertor
+          <i class="fas fa-times" id="close-convertor"></i>
+        </h3>
+        <p>Quantity:</p>
+        <article class="input-wrapper">
+          <label for="cups">cups: </label>
+          <input type="number" id="cups" value="1" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="tbsp">tablespoon (tbsp): </label>
+          <input type="number" id="tbsp" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="tsp">teaspoon (tsp): </label>
+          <input type="number" id="tsp" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="oz">ounces (oz): </label>
+          <input type="number" id="oz" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="gms">grams (gms): </label>
+          <input type="number" id="gms" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="ml">milliliters (ml): </label>
+          <input type="number" id="ml" />
+        </article>
+
+        <p>Temperature:</p>
+        <article class="input-wrapper">
+          <label for="degC">deg celsius (deg C): </label>
+          <input type="number" id="degC" value="1" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="degF">deg fahrenheit (deg F):</label>
+          <input type="number" id="degF" />
+        </article>
+      </form>
+      <!-- weight convertor modal box ends -->
+
+      <!-- my grocery list modal box starts -->
+      <section class="groceryList">
+        <h2>shopping list <i class="fas fa-times" id="close-grocery"></i></h2>
+        <article id="newTask">
+          <input type="text" placeholder="add item here..." />
+          <button type="button" class="secondaryBtn" id="push">Add</button>
+        </article>
+
+        <div id="tasks"></div>
+      </section>
+      <!-- my grocery list modal box ends -->
+    </header>
+    <!-- header sections ends -->
+
+    <!-- home section starts -->
+    <main class="cart">
+      <!-- hero section starts -->
+
+      <section class="hero" id="hero">
+        <article class="heroText">
+          <h4>here's your</h4>
+          <h1>shopping cart</h1>
+          <p>all that you've shopped for!</p>
+        </article>
+        <article class="heroBtns">
+          <a href="shop.html" class="secondaryBtn">
+            <i class="fas fa-arrow-alt-circle-left"></i> Back to Shop
+          </a>
+        </article>
+      </section>
+
+      <!-- hero section ends -->
+
+      <!-- banner1 cart starts -->
+      <section class="banner1">
+        <h2>Bought Items <i class="fas fa-cart-shopping"></i></h2>
+      </section>
+
+      <!-- banner1 cart ends -->
+
+      <!-- banner2 cart - product list starts-->
+      <section class="banner2">
+        <article id="label" class="text-center"></article>
+        <article class="card-wrapper" id="shopping-cart"></article>
+      </section>
+      <!-- banner2 cart - product list ends-->
+
+      <!-- banner 3 forms starts -->
+      <section class="banner3">
+        <h3>Let's proceed with checkout...</h3>
+        <form onsubmit="alertOnSubmit()" class="loginNew">
+          <h2>Login</h2>
+          <label for="username">username:</label>
+          <input
+            type="text"
+            placeholder="john-watson1996"
+            title="user name"
+            name="username"
+            id="username-input-login"
+            oninput="usernameValidityCheck(usernameInputLogin, usernameOutputMsg)"
+          />
+          <div id="username-output-msg"></div>
+          <br />
+
+          <label for="email">E-mail <em> (required)</em>: </label>
+          <input
+            type="email"
+            name="email"
+            id="email-address"
+            title="email address"
+            placeholder="john-watson@gmail.com"
+            required
+            oninput="emailValidityCheck(loginEmailAddressInput, loginEmailAddressOutputMsg)"
+          />
+          <div id="email-address-output-msg"></div>
+          <br />
+
+          <label for="password">Password <em> (required)</em>: </label>
+          <input
+            type="password"
+            name="password"
+            id="password-cart-login"
+            title="password"
+            placeholder="your password"
+            required
+            oninput="passwordValidityCheck(cartLoginPswInput, cartLoginPswOutputMsg)"
+          />
+          <div id="password-cart-login-msg"></div>
+          <br />
+
+          <label for="remember-check">
+            <input
+              type="checkbox"
+              title="remember me"
+              checked="checked"
+              name="remember"
+              id="remember-check"
+            />
+            : Remember Me
+          </label>
+          <input type="submit" class="secondaryBtn" value="login" />
+
+          <span class="psw">Forgot <a href="">password?</a></span>
+
+          <p id="toggle-sign-up">
+            Don't have an account? <br />
+            Sign Up below
+            <i class="fas fa-arrow-down"></i>
+          </p>
+        </form>
+
+        <form onsubmit="alertOnSubmit()" class="signUp">
+          <h2>Sign Up</h2>
+
+          <label for="first-name">first name <em> (required)</em>: </label>
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="john"
+            required
+          />
+          <br />
+
+          <label for="last-name">last name: </label>
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="watson"
+          />
+          <br />
+
+          <label for="username">username:</label>
+          <input
+            type="text"
+            placeholder="john-watson1996"
+            title="user name"
+            name="username"
+            id="signup-username-input"
+            oninput="usernameValidityCheck(signupUsernameInput, signupUsernameOutputMsg)"
+          />
+          <div id="signup-username-output"></div>
+          <br />
+
+          <label for="email-sign">E-mail <em> (required)</em>: </label>
+          <input
+            type="email"
+            name="email-sign"
+            id="email-address-signUp"
+            title="email address"
+            placeholder="john-watson@gmail.com"
+            required
+            oninput="emailValidityCheck(signupEmailInput, signupEmailOutputMsg)"
+          />
+          <div id="signup-email-msg"></div>
+          <br />
+
+          <label for="birth-date">your birth date: </label>
+          <input type="date" name="birth-date" id="birth-date" />
+          <br />
+
+          <label for="create-password"
+            >Create Password <em> (required)</em>:
+          </label>
+          <input
+            type="password"
+            name="create-password"
+            id="create-password"
+            title="create-password"
+            placeholder="create a strong password"
+            required
+            oninput="passwordValidityCheck(createPasswordInput, createPasswordOutputMsg)"
+          />
+          <div id="signup-password-msg"></div>
+          <p>
+            Minimum eight characters, at least one upper case English letter,
+            one lower case English letter, one number and one special character.
+          </p>
+
+          <br />
+          <label for="re-password"
+            >Re-enter Password <em> (required)</em>:
+          </label>
+          <input
+            type="password"
+            name="re-password"
+            id="re-password"
+            title="re-password"
+            placeholder="re-enter password"
+            required
+            oninput="matchPassword()"
+          />
+          <div id="password-match"></div>
+          <br />
+          <p>
+            By creating an account you agree to our
+            <a href="">Terms & Privacy</a>.
+          </p>
+          <input type="submit" class="secondaryBtn" value="sign up" />
+          <input type="reset" class="tertiaryBtn" value="reset" />
+        </form>
+
+        <form onsubmit="alertOnSubmit()" class="payment">
+          <h2>Payment Details</h2>
+
+          <label for="cardNumber">Card Number: </label>
+          <input
+            type="text"
+            name="cardNumber"
+            id="cardNumber"
+            placeholder="000-0000-0000-0000"
+            oninput="cardNumValidityCheck(creditCardNumInput, cardNumOutputMsg)"
+          />
+          <div id="card-num-msg"></div>
+          <br />
+
+          <label for="expireMM">Expiry Month: </label>
+          <select name="expireMM" id="expireMM">
+            <option value="">Month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+
+          <label for="expireYY">Expiry Year: </label>
+          <select name="expireYY" id="expireYY">
+            <option value="">Year</option>
+            <option value="20">2023</option>
+            <option value="21">2024</option>
+            <option value="22">2025</option>
+            <option value="23">2026</option>
+            <option value="24">2027</option>
+          </select>
+
+          <label for="cvv">CVV: </label>
+          <input
+            type="password"
+            name="cvv"
+            id="cvv"
+            placeholder="CVV"
+            oninput="cvvNumValidityCheck(cvvInputNum, cvvOutputMsg)"
+          />
+          <div id="cvv-output-msg"></div>
+          <br />
+
+          <label for="address">Billing Address: </label>
+          <input
+            placeholder="43, montpelier hill, dublin-7"
+            type="text"
+            name="address"
+            id="address"
+          />
+          <br />
+
+          <label for="pincode">Pin-code: </label>
+          <input
+            type="text"
+            name="pincode"
+            id="pincode"
+            placeholder="D07XT61"
+          />
+          <br />
+          <input type="submit" class="secondaryBtn" value="pay now" />
+          <input type="reset" class="tertiaryBtn" value="reset" />
+        </form>
+      </section>
+      <!-- banner 3 forms ends -->
+    </main>
+
+    <!-- home section ends -->
+    <!-- footer section starts -->
+
+    <footer class="footer" id="footer">
+      <section class="box-container">
+        <article class="box">
+          <img
+            src="img/TheStoneBakery_Favicon.png"
+            alt="The stone bakery logo"
+            width="64px"
+          />
+          <h3>The Stone bakery</h3>
+          <p>
+            Established In 1869, <br />
+            We Will Now Help You Bake-From-Home
+          </p>
+          <article class="share">
+            <a
+              href="https://www.facebook.com/"
+              class="fab fa-facebook"
+              title="facebook"
+            ></a>
+            <a
+              href="https://www.twitter.com/"
+              class="fab fa-twitter"
+              title="twitter"
+            ></a>
+            <a
+              href="https://www.instagram.com/"
+              class="fab fa-instagram"
+              title="instagram"
+            ></a>
+            <a
+              href="https://www.linkedin.com/"
+              class="fab fa-linkedin"
+              title="linkedin"
+            ></a>
+          </article>
+        </article>
+        <article class="box">
+          <h3>contact info</h3>
+          <a href="" class="links" title="links">
+            <i class="fas fa-phone"></i> +123-456-7890
+          </a>
+          <a href="" class="links" title="links">
+            <i class="fas fa-envelope"></i> contact@email.com
+          </a>
+          <a href="" class="links" title="links">
+            <i class="fas fa-map-marker-alt"></i> dublin 7, ireland
+          </a>
+        </article>
+        <article class="box">
+          <h3>quick links</h3>
+          <a href="index.html" class="links" title="links">
+            <i class="fas fa-home"></i> home
+          </a>
+          <a href="shop.html" class="links" title="links">
+            <i class="fas fa-shop"></i> shop
+          </a>
+          <a href="about.html" class="links" title="links">
+            <i class="fas fa-users"></i> about
+          </a>
+          <a href="cart.html" class="links" title="links">
+            <i class="fas fa-cart-shopping"></i> cart
+          </a>
+        </article>
+      </section>
+      <article class="credit">
+        design & dev by <span>karan gupta | D22124440 | TU Dublin</span> | all
+        rights reserved
+      </article>
+    </footer>
+
+    <!-- footer section ends -->
+
+    <!-- javascript link to external cdn for swiping images action -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript file attached at the end to load content first and then the script -->
+
+    <script src="javascript/products.js"></script>
+    <script src="javascript/header.js"></script>
+    <script src="javascript/cart.js"></script>
+  </body>
+</html>

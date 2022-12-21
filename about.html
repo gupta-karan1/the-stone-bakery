@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Know all about the Stone Bakers, how they've been baking incredible bakery since 1869, and the expert bakers are now here to make you masters of home baking!"
+    />
+    <meta
+      name="keywords"
+      content="Stone Bakers, Authentic Bakers, Dublin Local Bakery, Learn Home Baking"
+    />
+    <meta name="author" content="The Stone Bakers" />
+
+    <title>About : The Stone Bakery</title>
+
+    <!-- favicon link-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/TheStoneBakery_Favicon.png"
+    />
+
+    <!-- css stylesheet link -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- swiper slider CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header sections starts -->
+    <header class="header">
+      <!-- brand logo -->
+      <a href="index.html" class="logo">
+        <img
+          src="img/StoneBakeryLogo-01.png"
+          alt="the stone bakery logo"
+          title="the stone bakery logo"
+        />
+        The Stone Bakery</a
+      >
+
+      <!-- navigation menu starts -->
+      <nav class="navbar">
+        <i class="fas fa-times" id="head-nav-close"></i>
+        <a href="index.html" title="home">
+          <i class="fas fa-home-lg"></i> Home</a
+        >
+        <a href="about.html" title="about us">
+          <i class="fas fa-users"></i> About</a
+        >
+        <a href="shop.html" title="bakery shop">
+          <i class="fas fa-shop"></i> Shop</a
+        >
+        <a href="cart.html" title="shopping cart">
+          <i class="fas fa-cart-shopping"></i> Cart</a
+        >
+        <button type="button" id="unitBtn" title="unit convertor">
+          <i class="fas fa-weight"></i> unit convertor
+        </button>
+        <button type="button" id="groceryBtn" title="my grocery list">
+          <i class="fas fa-list-check"></i> shopping list
+        </button>
+      </nav>
+      <!-- navigation menu ends -->
+
+      <!-- nav menu icons start -->
+      <section class="icons">
+        <button
+          class="fas fa-user"
+          id="login-btn"
+          title="user login"
+          type="button"
+        ></button>
+        <button
+          class="fas fa-search"
+          id="search-btn"
+          title="search"
+          type="button"
+        ></button>
+        <button
+          class="fas fa-shopping-cart"
+          id="cart-btn"
+          title="shopping cart"
+          type="button"
+        >
+          <div class="itemNumIndicator"><p id="headerItemCount">00</p></div>
+        </button>
+        <button
+          class="fas fa-bars"
+          id="menu-btn"
+          title="menu"
+          type="button"
+        ></button>
+      </section>
+      <!-- nav menu icons ends -->
+
+      <!-- search input box starts -->
+      <form action="" class="search-form">
+        <div class="fas fa-times" id="search-close"></div>
+        <input
+          type="search"
+          name="search"
+          id="filterInput"
+          placeholder="search from menu..."
+        />
+
+        <ul id="names" class="collection with-header">
+          <li class="collection-item">
+            <a href="">flat bread</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">brown bread</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">multigrain</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">soda bread</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">sourdough</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">whole wheat</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">yeast</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">eggs</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">flour</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">sugar</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">bread pan</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">apple pie</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">walnut pie</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">date pie</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">bear claw</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">cheese cake</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">rolling pin</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">banana bread</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">fig cake</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">apple cake</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">swiss roll</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">carrot cake</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">pineapple pastry</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">butterscotch pastry</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">cream</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">butter</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">baking soda</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">raisins</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">mixing bowls</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">whipper</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">baking paper</a>
+          </li>
+
+          <li class="collection-item">
+            <a href="">berries</a>
+          </li>
+        </ul>
+      </form>
+      <!-- search input box ends -->
+
+      <!-- shopping cart box starts  -->
+      <section class="shopping-cart">
+        <i class="fas fa-times" id="head-cart-close"></i>
+        <h3>Total Items in Your Cart:</h3>
+        <h2 id="headerCartQuantity">00</h2>
+        <h3>Your Total Bill:</h3>
+        <h2 id="headerCartPrice">00</h2>
+        <a href="cart.html"
+          ><button type="button" class="tertiaryBtn">
+            View Your Cart <i class="fas fa-cart-shopping"></i></button
+        ></a>
+      </section>
+
+      <!-- shopping cart box ends  -->
+
+      <!-- user login form box starts -->
+
+      <form action="" class="login-form">
+        <h3>
+          <i class="fas fa-user-circle"></i> login
+          <i class="fas fa-times" id="head-login-close"></i>
+        </h3>
+        <p>
+          Email Address:
+          <input
+            type="email"
+            class="box"
+            title="email address"
+            placeholder="yourName@example.com"
+            id="header-login-email"
+            oninput="emailValidityCheck(headerInputEmail, headerOutputEmail)"
+          />
+        </p>
+        <div id="email-output">required</div>
+
+        <p>
+          Password:
+          <input
+            type="password"
+            class="box"
+            placeholder="your password"
+            title="password"
+            id="header-login-psw"
+            oninput="passwordValidityCheck(headerInputPsw, headerOutputPsw)"
+          />
+        </p>
+        <div id="header-psw-output">required</div>
+
+        <p>forgot your password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create now</a></p>
+        <input
+          type="submit"
+          class="primaryBtn"
+          id="loginBtn"
+          value="login now"
+        />
+      </form>
+      <!-- user login form box ends -->
+      <!-- weight convertor modal box starts -->
+      <form action="" class="convertor-form">
+        <h3>
+          <i class="fas fa-spoon"></i> Unit Convertor
+          <i class="fas fa-times" id="close-convertor"></i>
+        </h3>
+        <p>Quantity:</p>
+        <article class="input-wrapper">
+          <label for="cups">cups: </label>
+          <input type="number" id="cups" value="1" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="tbsp">tablespoon (tbsp): </label>
+          <input type="number" id="tbsp" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="tsp">teaspoon (tsp): </label>
+          <input type="number" id="tsp" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="oz">ounces (oz): </label>
+          <input type="number" id="oz" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="gms">grams (gms): </label>
+          <input type="number" id="gms" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="ml">milliliters (ml): </label>
+          <input type="number" id="ml" />
+        </article>
+
+        <p>Temperature:</p>
+        <article class="input-wrapper">
+          <label for="degC">deg celsius (deg C): </label>
+          <input type="number" id="degC" value="1" />
+        </article>
+
+        <article class="input-wrapper">
+          <label for="degF">deg fahrenheit (deg F):</label>
+          <input type="number" id="degF" />
+        </article>
+      </form>
+      <!-- weight convertor modal box ends -->
+
+      <!-- my grocery list modal box starts -->
+      <section class="groceryList">
+        <h2>shopping list <i class="fas fa-times" id="close-grocery"></i></h2>
+        <article id="newTask">
+          <input type="text" placeholder="add item here..." />
+          <button type="button" class="secondaryBtn" id="push">Add</button>
+        </article>
+
+        <div id="tasks"></div>
+      </section>
+      <!-- my grocery list modal box ends -->
+    </header>
+    <!-- header sections ends -->
+
+    <!-- home section starts -->
+    <main class="about">
+      <!-- hero section starts -->
+
+      <section class="hero" id="hero">
+        <article class="heroText">
+          <h4>Estd. 1869</h4>
+          <h1>know all about us</h1>
+          <p>Wish to know our history, values, and meet our team?</p>
+        </article>
+        <article class="heroBtns">
+          <a href="shop.html" class="secondaryBtn">
+            Visit Bakery <i class="fas fa-bread-slice"></i>
+          </a>
+        </article>
+      </section>
+
+      <!-- hero section ends -->
+
+      <!-- banner1 starts intro text-->
+      <section class="banner1">
+        <h2>stone bakers</h2>
+        <h4>
+          began as a small bakery in Dublin over 150 years ago. We never lost
+          track of our irish heritage.
+        </h4>
+        <p>
+          Today, we offer our wisdom to those who wish to become master bakers
+          at <b>home!</b>
+        </p>
+      </section>
+      <!-- banner1 ends  -->
+
+      <!-- banner2 journey scroll starts-->
+      <section class="banner2">
+        <article class="historyCard">
+          <h2>journey</h2>
+        </article>
+        <article class="historyCard">
+          <h2>1869</h2>
+          <h3>Lorem ipsum dolor</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article class="historyCard">
+          <h2>1939</h2>
+          <h3>Lorem ipsum dolor</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article class="historyCard">
+          <h2>1995</h2>
+          <h3>Lorem ipsum dolor</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article class="historyCard">
+          <h2>2005</h2>
+          <h3>Lorem ipsum dolor</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article class="historyCard">
+          <h2>2015</h2>
+          <h3>Lorem ipsum dolor</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article class="historyCard">
+          <h2>2022</h2>
+          <h3>Lorem ipsum dolor</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+      </section>
+      <!-- banner2 ends -->
+
+      <!-- banner3 support vegan/kosher/gluten-free starts-->
+      <section class="banner3">
+        <h2>We Support</h2>
+        <article class="container">
+          <article class="tabs">
+            <h3 class="active">Gluten-Free</h3>
+            <h3>Vegan</h3>
+            <h3>Kosher</h3>
+          </article>
+
+          <article class="tab-content">
+            <article class="active singleTab">
+              <h4>Gluten-Free</h4>
+              <img src="img/about-gluten-free.jpg" alt="glute free" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente nihil vel ad repellendus eveniet beatae, assumenda
+                consequatur dignissimos placeat quasi.
+              </p>
+            </article>
+            <article class="singleTab">
+              <h4>Vegan</h4>
+              <img src="img/about-vegan.jpg" alt="vegan" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente nihil vel ad repellendus eveniet beatae, assumenda
+                consequatur dignissimos placeat quasi.
+              </p>
+            </article>
+            <article class="singleTab">
+              <h4>Kosher</h4>
+              <img src="img/about-kosher.jpg" alt="vegan" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente nihil vel ad repellendus eveniet beatae, assumenda
+                consequatur dignissimos placeat quasi.
+              </p>
+            </article>
+          </article>
+        </article>
+      </section>
+      <!-- banner3 ends -->
+
+      <!-- banner4 starts   team-->
+      <section class="banner4">
+        <h2>meet our team</h2>
+        <section class="team-wrapper">
+          <article class="teamCard">
+            <img src="img/about-team-profile-1.jpg" alt="emilia watson" />
+            <h3>Emilia Watson</h3>
+          </article>
+          <article class="teamCard">
+            <img src="img/about-team-profile-2.jpg" alt="hanna lawrence" />
+            <h3>hanna lawrence</h3>
+          </article>
+          <article class="teamCard">
+            <img src="img/about-team-profile-3.jpg" alt="sara connors" />
+            <h3>sara connors</h3>
+          </article>
+          <article class="teamCard">
+            <img src="img/about-team-profile-4.jpg" alt="casey jones" />
+            <h3>casey jones</h3>
+          </article>
+          <article class="teamCard">
+            <img src="img/about-team-profile-5.jpg" alt="megan flower" />
+            <h3>neil diamond</h3>
+          </article>
+        </section>
+      </section>
+      <!-- banner4 ends -->
+
+      <!-- banner5 FAQs starts-->
+      <section class="banner5">
+        <h2>Frequently Asked Questions</h2>
+        <article class="container">
+          <article class="wrapper">
+            <button type="button" class="toggle">
+              Cater to diabetics? <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="contents">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                minus accusantium, officiis cum sint ullam corrupti. Eveniet
+                temporibus aliquid veniam!
+              </p>
+            </div>
+          </article>
+          <article class="wrapper">
+            <button type="button" class="toggle">
+              about masterclasses?
+              <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="contents">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                minus accusantium, officiis cum sint ullam corrupti. Eveniet
+                temporibus aliquid veniam!
+              </p>
+            </div>
+          </article>
+          <article class="wrapper">
+            <button type="button" class="toggle">
+              Do custom orders? <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="contents">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                minus accusantium, officiis cum sint ullam corrupti. Eveniet
+                temporibus aliquid veniam!
+              </p>
+            </div>
+          </article>
+        </article>
+      </section>
+      <!-- banner5 ends -->
+
+      <!-- banner6 contact form starts-->
+      <section class="banner6">
+        <h2>Contact Us</h2>
+        <form onsubmit="alertOnSubmit()" class="contactForm">
+          <article class="contact-wrapper">
+            <label for="yourName">Name (required):</label>
+            <input
+              placeholder="eg. John Watson"
+              required
+              type="text"
+              name="yourName"
+              id="yourName"
+              pattern="^[a-zA-Z]{3,15}$"
+            />
+          </article>
+
+          <!-- email address has JS input validation -->
+          <article class="contact-wrapper">
+            <label for="yourEmail">Email (required):</label>
+            <div id="email-wrapper">
+              <input
+                required
+                placeholder="eg. john@gmail.com"
+                type="email"
+                name="yourEmail"
+                id="email-id"
+                oninput="validityChecker(emailId, errorMsg, tickIcon)"
+              />
+              <div id="tickIcon"></div>
+            </div>
+            <p id="error-msg">please enter a valid email address!</p>
+          </article>
+          <article class="contact-wrapper">
+            <label for="yourNumber">Phone (not required):</label>
+            <input
+              placeholder="+353-085135902"
+              type="tel"
+              name="yourNumber"
+              id="contact-phone-Num"
+              oninput="phoneNumValidityCheck(contactPhoneNum, contactPhoneMsg)"
+            />
+            <div id="contact-phone-Msg"></div>
+          </article>
+          <article class="contact-wrapper">
+            <label for="yourMessage">Message (required):</label>
+            <textarea
+              placeholder="your message..."
+              required
+              rows="10"
+              name="yourMessage"
+              id="yourMessage"
+            ></textarea>
+          </article>
+          <div id="contactSubmitMsg"></div>
+
+          <input type="submit" value="submit" class="secondaryBtn" />
+          <input
+            id="resetContactBtn"
+            type="reset"
+            name="resetBtn"
+            class="primaryBtn"
+          />
+        </form>
+      </section>
+      <!-- banner6 ends -->
+      <!-- banner9 subscribe newsletter starts-->
+      <section class="subscribeNews">
+        <h2>get our bakery's secret recipes</h2>
+        <h3>subscribe to our newsletter</h3>
+        <form onsubmit="submitForm(homeSubscribeEmail)">
+          <article class="inputField">
+            <label for="email">Type in your email address:</label>
+            <div id="email-wrapper-subscribe">
+              <input
+                type="email"
+                class="emailInput"
+                name="email"
+                id="email-id-subscribe"
+                required
+                title="enter your email"
+                placeholder="you@contact.com"
+                oninput="validityChecker(emailIdSub, errorMsgSub, tickIconSub)"
+              />
+              <div id="tickIcon-subscribe"></div>
+            </div>
+            <p id="error-msg-subscribe">please enter a valid email address!</p>
+            <input
+              type="submit"
+              id="subscribeNewsletter"
+              value="submit"
+              class="secondaryBtn"
+            />
+          </article>
+        </form>
+      </section>
+      <!-- banner9 ends -->
+    </main>
+    <!-- home section ends -->
+    <!-- footer section starts -->
+
+    <footer class="footer" id="footer">
+      <section class="box-container">
+        <article class="box">
+          <img
+            src="img/TheStoneBakery_Favicon.png"
+            alt="The stone bakery logo"
+            width="64px"
+          />
+          <h3>The Stone bakery</h3>
+          <p>
+            Established In 1869, <br />
+            We Will Now Help You Bake-From-Home
+          </p>
+          <article class="share">
+            <a
+              href="https://www.facebook.com/"
+              class="fab fa-facebook"
+              title="facebook"
+            ></a>
+            <a
+              href="https://www.twitter.com/"
+              class="fab fa-twitter"
+              title="twitter"
+            ></a>
+            <a
+              href="https://www.instagram.com/"
+              class="fab fa-instagram"
+              title="instagram"
+            ></a>
+            <a
+              href="https://www.linkedin.com/"
+              class="fab fa-linkedin"
+              title="linkedin"
+            ></a>
+          </article>
+        </article>
+        <article class="box">
+          <h3>contact info</h3>
+          <a href="" class="links" title="links">
+            <i class="fas fa-phone"></i> +123-456-7890
+          </a>
+          <a href="" class="links" title="links">
+            <i class="fas fa-envelope"></i> contact@email.com
+          </a>
+          <a href="" class="links" title="links">
+            <i class="fas fa-map-marker-alt"></i> dublin 7, ireland
+          </a>
+        </article>
+        <article class="box">
+          <h3>quick links</h3>
+          <a href="index.html" class="links" title="links">
+            <i class="fas fa-home"></i> home
+          </a>
+          <a href="shop.html" class="links" title="links">
+            <i class="fas fa-shop"></i> shop
+          </a>
+          <a href="about.html" class="links" title="links">
+            <i class="fas fa-users"></i> about
+          </a>
+          <a href="cart.html" class="links" title="links">
+            <i class="fas fa-cart-shopping"></i> cart
+          </a>
+        </article>
+      </section>
+      <article class="credit">
+        design & dev by <span>karan gupta | D22124440 | TU Dublin</span> | all
+        rights reserved
+      </article>
+    </footer>
+
+    <!-- footer section ends -->
+
+    <!-- javascript link to external cdn for swiping images action -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript file attached at the end to load content first and then the script -->
+    <script src="javascript/products.js"></script>
+    <script src="javascript/header.js"></script>
+    <script src="javascript/about.js"></script>
+  </body>
+</html>
